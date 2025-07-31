@@ -9,7 +9,7 @@ public class Postagem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String titulo;
-    private String data;
+    private String data;    
     @ManyToOne()
     @JoinColumn(name = "autor_id")
     @JsonIgnore()
